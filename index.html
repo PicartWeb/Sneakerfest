@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Atelier | Premium Sneaker Drops</title>
+    <meta
+      name="description"
+      content="A premium sneaker showcase with interactive product switching, editorial storytelling, and a refined mini-cart experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Pulse Atelier home">
+          <span class="brand-mark"></span>
+          <span class="brand-text">Pulse Atelier</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#featured">Featured</a>
+          <a href="#editorial">Editorial</a>
+          <a href="#arrivals">Arrivals</a>
+          <a href="#story">Story</a>
+        </nav>
+        <button class="cart-trigger" type="button" aria-label="Open cart">
+          <span class="cart-trigger__icon">Bag</span>
+          <span class="cart-trigger__count" data-cart-count>0</span>
+        </button>
+      </header>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <a href="#featured">Featured</a>
+        <a href="#editorial">Editorial</a>
+        <a href="#arrivals">Arrivals</a>
+        <a href="#story">Story</a>
+        <button class="mobile-menu__cta" type="button" data-open-cart>
+          Open Cart
+        </button>
+      </div>
+      <main id="home">
+        <section class="hero section-dark">
+          <div class="hero-copy reveal">
+            <div class="hero-copy__top">
+              <span class="eyebrow" data-hero-badge>New Drop</span>
+              <div class="hero-kicker">
+                <span data-hero-card-tag>Studio Release</span>
+                <strong data-hero-card-title>Noctis Runner</strong>
+              </div>
+            </div>
+            <p class="hero-pretitle">
+              Performance objects for after-hours city movement.
+            </p>
+            <h1 data-hero-title>Velocity built for<br />midnight city runs.</h1>
+            <p data-hero-text>
+              Sculpted cushioning, gallery-grade finishes, and a silhouette
+              designed to feel rare from first glance to first step.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#featured"
+                >Shop The Drop</a
+              >
+              <button
+                class="button button-secondary"
+                type="button"
+                data-next-hero
+              >
+                View Next Story
+              </button>
+            </div>
+            <div class="hero-note" data-hero-card-copy>
+              Hand-finished mesh overlays with floating foam support.
+            </div>
+            <p class="hero-statement">
+              Pulse Atelier builds limited-run sneakers with the discipline of a
+              studio object and the ease of an everyday pair.
+            </p>
+            <div class="hero-metrics">
+              <article>
+                <strong>4.9</strong><span>Collector rating</span>
+              </article>
+              <article>
+                <strong>24h</strong><span>Priority dispatch</span>
+              </article>
+              <article><strong>12</strong><span>Seasonal shades</span></article>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="hero-promo-stack">
+              <div class="hero-promo-card hero-promo-card--primary">
+                <span>Design Language</span>
+                <strong>Floating foam geometry</strong>
+                <p>Performance comfort with a gallery-style silhouette.</p>
+              </div>
+            </div>
+            <div class="hero-stage" data-parallax-root>
+              <div class="hero-stage__backdrop"></div>
+              <div class="hero-stage__glow" data-stage-glow></div>
+              <div class="floating-chip floating-chip--top">
+                After Hours Capsule
+              </div>
+
+              <img
+                class="hero-stage__shoe product-tone product-tone--obsidian is-visible"
+                data-hero-image
+                src="assets/sneaker-base.png"
+                alt="Featured Noctis Runner sneaker"
+              />
+            </div>
+            <div class="hero-slider-nav">
+              <button
+                class="hero-dot is-active"
+                type="button"
+                data-hero-slide="0"
+                aria-label="Show Noctis Runner"
+              ></button>
+              <button
+                class="hero-dot"
+                type="button"
+                data-hero-slide="1"
+                aria-label="Show Ember Pulse"
+              ></button>
+              <button
+                class="hero-dot"
+                type="button"
+                data-hero-slide="2"
+                aria-label="Show Aurora Sprint"
+              ></button>
+            </div>
+          </div>
+        </section>
+        <section class="trust-strip trust-strip--light reveal">
+          <div>
+            Featured in concept stores across Berlin, Seoul, Milan, and Warsaw.
+          </div>
+          <div>
+            Built with collector-grade finishes and comfort-led construction.
+          </div>
+          <div>
+            Trusted by 18k+ collectors chasing quieter, sharper product design.
+          </div>
+        </section>
+        <section class="featured-product section-dark" id="featured">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Featured Sneaker</span>
+            <h2>The statement piece of the season.</h2>
+          </div>
+          <div class="product-showcase">
+            <div class="product-stage reveal">
+              <span class="product-badge" data-product-badge
+                >Collector Pick</span
+              >
+              <div class="product-orbit product-orbit--one"></div>
+              <div class="product-orbit product-orbit--two"></div>
+              <img
+                class="product-tone product-tone--obsidian"
+                data-product-image
+                src="assets/sneaker-base.png"
+                alt="Noctis Runner in obsidian black"
+              />
+              <div class="product-facts">
+                <article>
+                  <strong>Reactive Foam</strong
+                  ><span>Impact-tuned comfort</span>
+                </article>
+                <article>
+                  <strong>Layered Mesh</strong
+                  ><span>Breathable premium knit</span>
+                </article>
+              </div>
+            </div>
+            <div class="product-panel reveal">
+              <div class="product-panel__top">
+                <div>
+                  <span class="eyebrow" data-product-collection
+                    >After Hours Capsule</span
+                  >
+                  <h3 data-product-name>Noctis Runner</h3>
+                </div>
+                <strong class="product-price" data-product-price>$248</strong>
+              </div>
+              <p class="product-description" data-product-description>
+                Tonal black overlays, soft reflective detailing, and a sculpted
+                sole that gives the entire profile a cinematic glow.
+              </p>
+              <div class="product-meta">
+                <span data-product-tagline
+                  >Best for: Night movement / luxe streetwear / all-day
+                  flex</span
+                >
+                <span data-product-stock>Drop stock: 19 pairs left</span>
+              </div>
+              <div class="selector-block">
+                <span>Choose color</span>
+                <div class="color-switcher" data-color-switcher>
+                  <button
+                    class="color-dot is-active"
+                    type="button"
+                    data-color="obsidian"
+                    aria-label="Obsidian black"
+                  ></button>
+                  <button
+                    class="color-dot color-dot--ember"
+                    type="button"
+                    data-color="ember"
+                    aria-label="Ember orange"
+                  ></button>
+                  <button
+                    class="color-dot color-dot--ice"
+                    type="button"
+                    data-color="ice"
+                    aria-label="Ice silver"
+                  ></button>
+                </div>
+              </div>
+              <div class="selector-block">
+                <span>Select size</span>
+                <div class="size-selector" data-size-selector>
+                  <button class="size-chip" type="button">38</button>
+                  <button class="size-chip" type="button">39</button>
+                  <button class="size-chip is-active" type="button">40</button>
+                  <button class="size-chip" type="button">41</button>
+                  <button class="size-chip" type="button">42</button>
+                  <button class="size-chip" type="button">43</button>
+                </div>
+              </div>
+              <div class="product-actions">
+                <button
+                  class="button button-primary"
+                  type="button"
+                  data-add-to-cart
+                >
+                  Add To Cart
+                </button>
+                <button class="button button-secondary" type="button">
+                  Save Drop
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="editorial-section section-light" id="editorial">
+          <div class="section-heading reveal section-heading--dark">
+            <span class="eyebrow eyebrow--light">Editorial Spotlight</span>
+            <h2>
+              Clean lines, brighter surfaces, and product-first storytelling.
+            </h2>
+          </div>
+          <div class="editorial-grid">
+            <article class="editorial-card editorial-card--feature reveal">
+              <div class="editorial-copy">
+                <span class="editorial-label">Studio Story</span>
+                <p class="editorial-micro">
+                  Quiet luxury for people who still want movement in the
+                  silhouette.
+                </p>
+                <h3>Designed with fashion-object discipline.</h3>
+                <p>
+                  We refine each pair like a product shoot before it ever
+                  reaches production: tighter lines, cleaner spacing, sharper
+                  textures, stronger visual restraint.
+                </p>
+              </div>
+              <img
+                src="assets/shoe-aurora.svg"
+                alt="Aurora Sprint on editorial card"
+              />
+            </article>
+            <article class="editorial-card reveal">
+              <span class="editorial-label">Material Focus</span>
+              <h3>Reflective mesh meets soft-touch comfort.</h3>
+              <p>
+                Every capsule balances a sculptural profile with daily
+                wearability and elevated hand-feel.
+              </p>
+            </article>
+            <article class="editorial-card editorial-card--soft reveal">
+              <span class="editorial-label">Drop Service</span>
+              <h3>Fast checkout and premium packaging built in.</h3>
+              <p>
+                Cleaner checkout flow, easier product selection, and a more
+                refined first-touch experience.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="arrivals section-soft" id="arrivals">
+          <div
+            class="section-heading reveal section-heading--dark section-heading--inline"
+          >
+            <div>
+              <span class="eyebrow eyebrow--light">New Arrivals</span>
+              <h2>Fresh silhouettes with collector energy.</h2>
+              <p class="section-sidecopy">
+                A tighter mix of studio pairs, brighter capsules, and limited
+                weekend releases.
+              </p>
+            </div>
+            <div class="slider-controls">
+              <button
+                class="slider-control"
+                type="button"
+                data-slider-prev
+                aria-label="Previous arrival"
+              >
+                Prev
+              </button>
+              <button
+                class="slider-control"
+                type="button"
+                data-slider-next
+                aria-label="Next arrival"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <div class="arrival-slider swiper" data-arrival-slider>
+            <div class="swiper-wrapper">
+              <article
+                class="arrival-card arrival-card--light swiper-slide reveal"
+              >
+                <span class="arrival-tag arrival-tag--light">NEW</span>
+                <img
+                  class="product-tone product-tone--ice"
+                  src="assets/sneaker-base.png"
+                  alt="Aurora Sprint sneaker"
+                />
+                <div class="arrival-card__content">
+                  <div>
+                    <span class="arrival-micro"
+                      >Studio tint / low-volume release</span
+                    >
+                    <h3>Aurora Sprint</h3>
+                    <p>
+                      Glacier mesh with electric trim and a lightweight rebound
+                      sole.
+                    </p>
+                  </div>
+                  <strong>$228</strong>
+                </div>
+                <div class="arrival-card__actions">
+                  <span class="arrival-chip">DROP</span>
+                  <button class="quick-add" type="button" data-quick-add="ice">
+                    Quick Add
+                  </button>
+                </div>
+              </article>
+              <article
+                class="arrival-card arrival-card--spotlight swiper-slide reveal"
+              >
+                <span class="arrival-tag arrival-tag--sale">LIMITED</span>
+                <div class="arrival-card__split">
+                  <div>
+                    <p class="arrival-kicker">Weekend Spotlight</p>
+                    <h3>Ember Pulse</h3>
+                    <p>
+                      Burnt-orange suede and bold sidewall sculpting for warm
+                      contrast.
+                    </p>
+                    <div class="arrival-card__actions">
+                      <span class="arrival-chip">DROP</span>
+                      <button
+                        class="quick-add"
+                        type="button"
+                        data-quick-add="ember"
+                      >
+                        Quick Add
+                      </button>
+                    </div>
+                  </div>
+                  <img
+                    class="product-tone product-tone--ember"
+                    src="assets/sneaker-base.png"
+                    alt="Ember Pulse sneaker"
+                  />
+                </div>
+              </article>
+              <article
+                class="arrival-card arrival-card--light swiper-slide reveal"
+              >
+                <span class="arrival-tag arrival-tag--limited">LIMITED</span>
+                <img
+                  class="product-tone product-tone--obsidian"
+                  src="assets/sneaker-base.png"
+                  alt="Noctis Runner sneaker"
+                />
+                <div class="arrival-card__content">
+                  <div>
+                    <span class="arrival-micro"
+                      >Core capsule / collector staple</span
+                    >
+                    <h3>Noctis Runner</h3>
+                    <p>
+                      Reflective trim with an obsidian upper built for
+                      after-dark styling.
+                    </p>
+                  </div>
+                  <strong>$248</strong>
+                </div>
+                <div class="arrival-card__actions">
+                  <span class="arrival-chip">CORE</span>
+                  <button
+                    class="quick-add"
+                    type="button"
+                    data-quick-add="obsidian"
+                  >
+                    Quick Add
+                  </button>
+                </div>
+              </article>
+              <article
+                class="arrival-card arrival-card--light swiper-slide reveal"
+              >
+                <span class="arrival-tag arrival-tag--light">DROP</span>
+                <img
+                  class="product-tone product-tone--ice"
+                  src="assets/sneaker-base.png"
+                  alt="Glacier Session sneaker"
+                />
+                <div class="arrival-card__content">
+                  <div>
+                    <span class="arrival-micro"
+                      >Editorial pick / clean uniform styling</span
+                    >
+                    <h3>Glacier Session</h3>
+                    <p>
+                      Crisp silver accents and a cleaner profile for minimal
+                      wardrobes.
+                    </p>
+                  </div>
+                  <strong>$236</strong>
+                </div>
+                <div class="arrival-card__actions">
+                  <span class="arrival-chip">NEW</span>
+                  <button class="quick-add" type="button" data-quick-add="ice">
+                    Quick Add
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="gallery section-light">
+          <div class="section-heading reveal section-heading--dark">
+            <span class="eyebrow eyebrow--light">Collection Gallery</span>
+            <h2>
+              Swipe-ready product stories with brighter editorial balance.
+            </h2>
+          </div>
+          <div class="gallery-track" data-gallery-track>
+            <article class="gallery-card gallery-card--light reveal">
+              <span>Runway Pack</span
+              ><img
+                class="product-tone product-tone--obsidian"
+                src="assets/sneaker-base.png"
+                alt="Noctis Runner profile"
+              />
+              <h3>Noctis Runner</h3>
+              <p>
+                Low-light luxury with a darker finish and cleaner studio
+                framing.
+              </p>
+            </article>
+            <article class="gallery-card gallery-card--light reveal">
+              <span>Solar Deal</span
+              ><img
+                class="product-tone product-tone--ember"
+                src="assets/sneaker-base.png"
+                alt="Ember Pulse profile"
+              />
+              <h3>Ember Pulse</h3>
+              <p>
+                Warm suede contrast, bright heel energy, and a rarer
+                weekend-drop mood.
+              </p>
+            </article>
+            <article class="gallery-card gallery-card--light reveal">
+              <span>Ice Lab</span
+              ><img
+                class="product-tone product-tone--ice"
+                src="assets/sneaker-base.png"
+                alt="Aurora Sprint profile"
+              />
+              <h3>Aurora Sprint</h3>
+              <p>
+                Cooler tonality with lighter styling and a crisper editorial
+                profile.
+              </p>
+            </article>
+            <article class="gallery-card gallery-card--light reveal">
+              <span>Studio Wear</span
+              ><img
+                class="product-tone product-tone--obsidian"
+                src="assets/sneaker-base.png"
+                alt="Monochrome Flow sneaker"
+              />
+              <h3>Monochrome Flow</h3>
+              <p>
+                Tailored for minimal wardrobes with a more tactile,
+                product-shoot finish.
+              </p>
+            </article>
+          </div>
+        </section>
+        <div class="brand-divider reveal" aria-label="Brand divider">
+          <span class="brand-divider__line"></span>
+          <div class="brand-divider__mark" aria-label="Logo placeholder">
+            <span class="brand-divider__initials">CWK</span>
+          </div>
+          <span class="brand-divider__line"></span>
+        </div>
+        <section class="story section-dark" id="story">
+          <div class="story-panel reveal">
+            <div>
+              <span class="eyebrow">Design Philosophy</span>
+              <h2>Made like a fashion object. Worn like a performance tool.</h2>
+            </div>
+            <p>
+              Every pair is developed as a visual statement first, then tuned
+              for comfort with responsive midsoles, breathable uppers, and
+              collector-level finish quality.
+            </p>
+          </div>
+          <div class="story-grid">
+            <article class="story-card reveal">
+              <h3>Precision materials</h3>
+              <p>
+                Layered mesh, coated suede accents, and soft-touch internal
+                lining across each capsule.
+              </p>
+            </article>
+            <article class="story-card reveal">
+              <h3>Intentional silhouettes</h3>
+              <p>
+                Shapes designed to read beautifully in motion, in hand, and on
+                camera.
+              </p>
+            </article>
+            <article class="story-card reveal">
+              <h3>Drop culture experience</h3>
+              <p>
+                Curated launches, faster checkout, and a premium unboxing flow
+                for every order.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="brand-quote section-light reveal">
+          <p>"We don't chase louder sneakers. We chase better-shaped ones."</p>
+          <span>Pulse Atelier studio note</span>
+        </section>
+        <section class="reviews section-soft">
+          <div class="section-heading reveal section-heading--dark">
+            <span class="eyebrow eyebrow--light">Social Proof</span>
+            <h2>
+              Trusted by collectors who care about both comfort and image.
+            </h2>
+          </div>
+          <div class="review-grid">
+            <article class="review-card review-card--light reveal">
+              <p>
+                "The mobile experience feels as premium as the product. The cart
+                flow and visuals are next-level."
+              </p>
+              <strong>Amelia V.</strong>
+            </article>
+            <article class="review-card review-card--light reveal">
+              <p>
+                "Looks like a concept-fashion drop but wears like a real daily
+                runner. The finish quality is unreal."
+              </p>
+              <strong>Marcus L.</strong>
+            </article>
+            <article class="review-card review-card--light reveal">
+              <p>
+                "One of the cleanest sneaker launches I've seen in a while.
+                Every color feels intentional."
+              </p>
+              <strong>Nina K.</strong>
+            </article>
+          </div>
+        </section>
+        <section class="cta-band cta-band--light reveal">
+          <div>
+            <span class="eyebrow eyebrow--light">Join The Next Release</span>
+            <h2>
+              Receive studio notes, early access links, and first-look capsule
+              previews.
+            </h2>
+          </div>
+          <form class="cta-form" data-cta-form>
+            <label class="sr-only" for="drop-email">Email address</label>
+            <input
+              id="drop-email"
+              class="cta-input"
+              type="email"
+              placeholder="Email for next-drop access"
+            />
+            <button class="button button-primary" type="submit">
+              Join The List
+            </button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-brand">
+          <strong>Pulse Atelier</strong>
+          <p>
+            Premium sneaker stories designed for movement, style, and collector
+            appeal.
+          </p>
+          <span class="footer-handle">CodeWithKokizZ</span>
+          <span class="footer-note"
+            >Built for city movement, gallery silhouettes, and slower product
+            decisions.</span
+          >
+          <span class="footer-credit"
+            >Product photo source: CC BY 4.0, Wikimedia Commons / CARIUMA.</span
+          >
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a><a href="#arrivals">Arrivals</a
+          ><a href="#story">Story</a><a href="#editorial">Editorial</a>
+        </div>
+      </footer>
+    </div>
+    <div class="cart-toast" data-cart-toast aria-live="polite">
+      Added to your drop bag.
+    </div>
+    <div
+      class="cart-toast cart-toast--success"
+      data-form-toast
+      aria-live="polite"
+    >
+      You're on the early-access list.
+    </div>
+
+    <div class="cart-panel" data-cart-panel aria-hidden="true">
+      <div class="cart-overlay" data-close-cart></div>
+      <aside class="cart-drawer" aria-label="Mini cart">
+        <button
+          class="cart-close"
+          type="button"
+          data-close-cart
+          aria-label="Close cart"
+        >
+          Close
+        </button>
+        <span class="eyebrow">Mini Cart</span>
+        <h2>Your selected drop.</h2>
+        <div class="cart-item" data-cart-item>
+          <img
+            class="product-tone product-tone--obsidian"
+            data-cart-image
+            src="assets/sneaker-base.png"
+            alt="Selected sneaker in cart"
+          />
+          <div>
+            <strong data-cart-name>Noctis Runner</strong>
+            <p data-cart-variant>Obsidian / Size 40</p>
+            <div class="cart-qty">
+              <button
+                type="button"
+                data-qty-change="-1"
+                aria-label="Decrease quantity"
+              >
+                -
+              </button>
+              <span data-cart-qty>1</span>
+              <button
+                type="button"
+                data-qty-change="1"
+                aria-label="Increase quantity"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-summary">
+          <div><span>Subtotal</span><strong data-cart-total>$248</strong></div>
+          <p>Free premium packaging and priority delivery included.</p>
+        </div>
+        <button class="button button-primary button-block" type="button">
+          Secure Checkout
+        </button>
+      </aside>
+    </div>
+    <script src="assets/vendor/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
